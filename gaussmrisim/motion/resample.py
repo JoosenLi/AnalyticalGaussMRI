@@ -19,7 +19,7 @@ Two conventions matter and both are easy to get wrong:
   ``g1 = w2+w3``, sampled at ``i-1+w1/g0`` and ``i+1+w3/g1``; hardware trilinear then
   reproduces the cubic sum exactly, so this is an optimization, not an approximation.
 
-``bspline_prefilter`` is verified by ``scripts/verify_resample.py``: at zero displacement
+With ``bspline_prefilter``, at zero displacement
 the resampler must return the input volume (the interpolation property), and against
 ``scipy.ndimage.map_coordinates(order=3)`` it must agree to float32 precision.
 """

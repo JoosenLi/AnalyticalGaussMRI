@@ -28,7 +28,6 @@ first, then:
 python -m pip install -e '.[paper]'
 export CUDA_HOME=/usr/local/cuda  # replace with your toolkit location
 source scripts/env_gpu_nufft.sh
-python tests/smoke_gpu.py
 ```
 
 CUDA extensions compile on first use into PyTorch's cache. Set
@@ -54,23 +53,18 @@ python scripts/reproduce.py motion --device cuda:0
 python scripts/reproduce.py figures
 ```
 
-These are full experiments, not smoke tests. The runner records commands and logs
-under `outputs/logs/`. Start with fresh outputs when refitting. Figure 1 and 2 assets
-are included for illustration; their generation scripts are intentionally omitted.
+The runner records commands and logs
+under `outputs/logs/`. Start with fresh outputs when refitting.
 
 The fit uses BrainWeb subject 04, eleven 0.5 mm tissue maps, the fixed budget in
-`configs/brainweb_budget.json`, and 1500 steps per tissue. Densification changes the
-initial 1.50 M primitives (1.70 M in the paper's run). For two-GPU fitting, run the
-fit command printed by `--dry-run` with `--shard 0/2` and `--shard 1/2` on separate
-GPUs, then repeat it with `--merge` after both finish. Existing data can be selected
-with `GMRISIM_BRAINWEB=/path/to/brainweb`; consult [BrainWeb](https://brainweb.bic.mni.mcgill.ca/)
-for data-use terms. No data or trained checkpoints are redistributed.
+`configs/brainweb_budget.json`, and 1500 steps per tissue. Consult [BrainWeb](https://brainweb.bic.mni.mcgill.ca/)
+for data-use terms.
 
 The scripts preserve the paper settings: 300 k initial Gaussians and TV weight
 1e-4 for Shepp–Logan; 1/0.5 mm voxel-average baselines; 30 radial LSQR iterations
 with a density-adjoint initialization; 20 coils with 125 Fourier modes; and eight
 motion trajectories. Run Cartesian before radial so noise power is calibrated to
-your fitted object. GPU timings and refitted numbers may differ across systems.
+your fitted object.
 
 | Paper result | Stage | Output under `outputs/` |
 |---|---|---|
@@ -87,16 +81,10 @@ gaussmrisim/   Gaussian representation, fitting, encoding, coils, motion, tissue
 experiments/   paper benchmarks and Figures 3–6
 scripts/       data download, unified runner, CUDA environment helper
 configs/       paper's per-tissue primitive budget
-tests/         GPU smoke tests and numerical checks
 docs/assets/   the two README illustrations
 ```
 
 Positions are `(x, y, z)` in mm; volumes are `[z, y, x]`; frequencies are cycles/mm.
-Gaussian weights are integrated masses. Receive coils remain in the scanner frame
-when the subject moves. The image-domain fitter uses a stated finite Gaussian
-cutoff; the analytical Fourier model evaluates the fitted mixture without that cutoff.
-A fitted continuous object is a reference for encoding studies, not proof of recovered
-sub-voxel anatomy. Coil fitting and finite Fourier support remain approximations.
 
 ## Related work and code acknowledgement
 
@@ -106,11 +94,7 @@ We acknowledge M. Guerquin-Kern, L. Lejeune, K. P. Pruessmann, and M. Unser,
 [doi:10.1109/TMI.2011.2174158](https://doi.org/10.1109/TMI.2011.2174158),
 and their [MATLAB analytical MRI phantom software](https://bigwww.epfl.ch/algorithms/mriphantom/)
 ([source repository](https://github.com/Biomedical-Imaging-Group/realistic-analytical-phantom)),
-which we consulted as a reference implementation. Building on its analytical
-parallel-MRI and Fourier-sensitivity formulation, this project implements a
-**3D Gaussian representation with CUDA evaluation**, including rigid motion and
-tissue-dependent contrast. This is not a claim that analytical parallel MRI or
-Fourier coil models originate here, nor a port of the entire MATLAB toolbox.
+which we consulted as a reference implementation.
 
 The polyhedral benchmark separately follows Ngo et al., “Realistic analytical
 polyhedral MRI phantoms,” *Magnetic Resonance in Medicine*, 76(2), 663–678, 2016,
@@ -123,23 +107,6 @@ comparison do not claim that extension. Other foundations include Koay et al.
 
 ## Citation and license
 
-Please cite the accompanying manuscript when using this code; machine-readable
-metadata is in [CITATION.cff](CITATION.cff). Please also acknowledge the foundational
-work above when relevant. Code is distributed under [Apache-2.0](LICENSE).
-External datasets and dependencies retain their own terms.
+Please cite the accompanying manuscript when using this code.
 
-## Validation
-
-A separately installed wheel passed short GPU tests on an RTX 6000 Ada: fitting,
-Fourier/coil/motion identities, cuFINUFFT against direct DFT, LSQR, and mesh encoding.
-The acquisition checks passed **13/13**. Full experiments were not rerun for release.
-Tests used an existing CUDA Python environment, not a clean operating-system install.
-
-```bash
-python tests/smoke_gpu.py
-python tests/smoke_paper.py  # requires the paper extra
-python tests/verify_sim.py
-```
-
-Numerical results are in `tests/validation.json`; original source hashes are in
-`configs/source_manifest.json`.
+Code is licensed under [Apache-2.0](LICENSE).

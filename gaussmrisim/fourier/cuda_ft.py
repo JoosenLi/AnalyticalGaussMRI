@@ -1,8 +1,7 @@
 """CUDA entry point for the analytical Fourier forward model.
 
-Same mathematics as :mod:`gaussmrisim.fourier.gaussian_ft`, which stays the accuracy
-reference: this module is only allowed to be faster, never different, and
-``tests/verify_cuda.py`` asserts that on every call signature.
+Uses the same mathematics as the PyTorch reference in
+:mod:`gaussmrisim.fourier.gaussian_ft`.
 
 Chunking is over **k-space samples**, matching AGNC's convention. It is needed for a
 different reason here: the output is only ``[C, M]`` (the ``[V, M]`` spectrum lives in

@@ -16,8 +16,7 @@ Two consequences worth stating separately, because they are the whole point:
    primitives instead (:meth:`GaussianMixture3D.rigid_transform`) is equally exact
    but costs ``O(N)`` per pose, so it is only preferable when poses are few.
 
-The two paths are independent implementations of the same identity, which is why
-``tests/test_motion.py`` checks them against each other as well as against a raster.
+The two paths are independent implementations of the same identity.
 
 **Coils do not move.** The receive array is fixed in scanner coordinates while the
 subject moves, so the coil shift ``v`` is applied in the scanner frame and the pose
