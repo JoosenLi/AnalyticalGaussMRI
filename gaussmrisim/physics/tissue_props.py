@@ -4,8 +4,7 @@ The numbers are **not** ours: the 1.5 T table is SNAKE's
 ``snake/core/phantom/data/tissues_properties_1T5.csv``, reproduced here so that a GPS
 simulation and a SNAKE simulation of the same subject are driven by identical physics
 and any disagreement between them is attributable to the *engine*, not to the table.
-That is the whole point of copying rather than inventing: it makes the cross-validation
-in ``scripts/verify_contrast_snake.py`` meaningful.
+
 
 Field strength is part of the key, never a default. A T2* of 61 ms (WM at 1.5 T) and
 53 ms (WM at 3 T) look similar enough that a silently wrong field would produce a

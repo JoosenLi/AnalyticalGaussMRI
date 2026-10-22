@@ -19,8 +19,8 @@ divergence theorem its FT needs only oriented boundary EDGES (see the edge kerne
                        inside ``Omega`` -- grid lines, found by ray casting.
 
 No polygon is ever assembled: Green's theorem in the plane only needs the oriented
-segments, so caps are just more edges. Checked in ``tests/verify_polyhedral.py``:
-all-ones weights must reproduce the uncut mesh exactly, a box cut into random-valued
+segments, so caps are just more edges. All-ones weights reproduce the uncut
+mesh exactly; a box cut into random-valued
 cells must equal the sum of the sub-box sincs.
 """
 

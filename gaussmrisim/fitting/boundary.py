@@ -53,7 +53,7 @@ this module exists for. ``Sigma = diag(100, 1, 1)`` with ``n = (1,1,0)/sqrt(2)``
 ``alpha = 0.5`` gives a 2x2 block of determinant -537; ``from_covariance`` then clamps the
 negative eigenvalue and the moment identity above quietly stops holding.
 
-Two exact consequences, both checked in ``scripts/verify_boundary.py``:
+Two exact consequences:
 
 * tangential variance is untouched: ``t.n = 0`` gives ``t^T Sigma' t = t^T Sigma t``;
 * the **conditional** variance along the normal scales by exactly ``1 - alpha^2``, i.e.

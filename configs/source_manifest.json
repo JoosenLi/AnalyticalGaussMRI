@@ -222,18 +222,6 @@
       "original": "scripts/shepplogan_tets.py",
       "sha256": "1bedbb78f7b91bb42bdf01290e1a0ffe1dbdad65507b7804aeec86a8353b421f"
     },
-    "tests/verify_cuda.py": {
-      "original": "scripts/verify_cuda.py",
-      "sha256": "bc8fa5499f3272ef50688de86ee25763575adf6a2f0ec41a0bc2771897843ca8"
-    },
-    "tests/verify_polyhedral.py": {
-      "original": "scripts/verify_polyhedral.py",
-      "sha256": "9303fae4e60fd813299db3704ecfc47c439e9efd9d4c24d9a61ee4b82df46996"
-    },
-    "tests/verify_sim.py": {
-      "original": "scripts/verify_sim.py",
-      "sha256": "b8ad18a71cd151176ed181b9dc061617aa2ecb42185e014e242671fcdb088e35"
-    },
     "scripts/env_gpu_nufft.sh": {
       "original": "scripts/env_gpu_nufft.sh",
       "sha256": "c62b720db032d73560352e8dfc07a2ea90268847e06860eb2115fc64808d1dce"

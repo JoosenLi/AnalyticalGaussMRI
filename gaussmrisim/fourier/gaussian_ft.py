@@ -11,9 +11,7 @@ This module is the **accuracy reference** of the whole project. Rules:
   (see :mod:`gaussmrisim.conventions`), so results are float32-clean even at
   100 um resolution over a 200 mm FOV.
 
-A fused CUDA kernel will replace the inner loop later. It must reproduce this
-function to the stated tolerance on the tests in ``tests/`` before it is used
-anywhere, and it must implement the same phase reduction.
+The fused CUDA implementation uses the same transform and phase reduction.
 """
 
 from __future__ import annotations

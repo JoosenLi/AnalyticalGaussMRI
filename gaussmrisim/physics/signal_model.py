@@ -60,10 +60,7 @@ def gre(pd: Tensor, t1_ms: Tensor, t2star_ms: Tensor, *, tr_ms: float, te_ms: fl
 
         a = rho sin(alpha) exp(-TE/T2*) (1 - E1) / (1 - cos(alpha) E1),  E1 = exp(-TR/T1)
 
-    Written to be **bit-comparable with SNAKE's** ``_contrast_gre`` (same factor order,
-    same use of degrees), because the engine cross-validation in
-    ``scripts/verify_contrast_snake.py`` is only informative if the contrast layer is
-    known to agree first -- otherwise a k-space disagreement has two possible causes.
+    Uses the same factor order and degree convention as SNAKE's ``_contrast_gre``.
 
     This is the same expression as :func:`spgr`, which takes it from a mixture's
     per-primitive properties; the difference is only where the properties come from. A
