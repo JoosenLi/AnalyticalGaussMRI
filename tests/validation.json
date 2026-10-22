@@ -1,0 +1,20 @@
+{
+  "scope": "short GPU smoke tests only; no full paper rerun",
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "python": "3.10",
+  "torch": "2.6.0+cu124",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "cupy": "13.6.0",
+  "cufinufft": "2.4.1",
+  "tetgen": "0.8.4",
+  "fit_steps": 12,
+  "fit_primitives": 64,
+  "fourier_relative_error": 1.6033547467486642e-07,
+  "coil_relative_error": 2.2709397740072745e-07,
+  "motion_relative_error": 1.3970004886232346e-07,
+  "nufft_direct_dft_relative_error": 1.3466728072350793e-06,
+  "polyhedral_box_error": 3.3307479202064507e-15,
+  "lsqr_smoke_iterations": 2,
+  "simulation_checks_passed": 13
+}

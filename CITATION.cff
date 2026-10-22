@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using this software."
+title: "Continuous Representation Before Reconstruction: An Analytical Framework for 3D Parallel MRI Simulation"
+authors:
+  - family-names: Li
+    given-names: Qiaoxin
+  - family-names: Comby
+    given-names: Pierre-Antoine
+  - family-names: Radhakrishna
+    given-names: Chaithya Giliyar
+  - family-names: Ciuciu
+    given-names: Philippe
+repository-code: "https://github.com/JoosenLi/AnalyticalGaussMRI"
+license: Apache-2.0
+version: 0.1.0
+type: software

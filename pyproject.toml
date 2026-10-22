@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analyticalgaussmri"
+version = "0.1.0"
+description = "Continuous Gaussian representations for analytical 3D parallel MRI simulation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "AnalyticalGaussMRI contributors"}]
+dependencies = ["torch>=2.6", "numpy>=1.26", "scipy>=1.13", "nibabel>=5.2", "matplotlib>=3.8", "ninja>=1.11"]
+
+[project.optional-dependencies]
+paper = ["scikit-image==0.25.2", "tetgen==0.8.4", "brainweb-dl==0.4.6", "cupy-cuda12x==13.6.0", "cufinufft==2.4.1", "mri-nufft @ git+https://github.com/mind-inria/mri-nufft.git@07bc2d99c623d2d279a530ed0e228f19ec2d18b3"]
+
+[tool.setuptools.packages.find]
+include = ["gaussmrisim*"]
+
+[tool.setuptools.package-data]
+gaussmrisim = ["fourier/cuda/*.cu", "fitting/cuda/*.cu"]
