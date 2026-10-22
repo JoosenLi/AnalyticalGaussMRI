@@ -1,0 +1,8 @@
+AnalyticalGaussMRI
+Copyright 2026 AnalyticalGaussMRI contributors
+
+This project acknowledges the analytical parallel-MRI formulation and MATLAB
+reference software of Matthieu Guerquin-Kern, Laurent Lejeune, Klaas P. Pruessmann,
+and Michael Unser (IEEE TMI, 2012), and the polyphantom MATLAB/MEX reference of
+Tri M. Ngo and coauthors (MRM, 2016).
+See README.md for references and the scope of the 3D CUDA implementation.

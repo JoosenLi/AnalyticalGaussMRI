@@ -1,0 +1,241 @@
+{
+  "source_commit": "4355314af3368bd30e3fc223b1bfe830a334bc75",
+  "paper_sha256": "039fc0d331c15179e42cdfe9eb5e26d021f6ace1ff2ebc2643684b990b61d7d3",
+  "source_files": {
+    "gaussmrisim/acquisition/__init__.py": {
+      "original": "gaussmrisim/acquisition/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaussmrisim/acquisition/trajectory.py": {
+      "original": "gaussmrisim/acquisition/trajectory.py",
+      "sha256": "f1f0f10c82b46c13e1e1ad575a4087dac8f4f8e62fa887405319e4e9fe3741af"
+    },
+    "gaussmrisim/coils/__init__.py": {
+      "original": "gaussmrisim/coils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaussmrisim/coils/biot_savart.py": {
+      "original": "gaussmrisim/coils/biot_savart.py",
+      "sha256": "0b5a4afccfb4fdcf49fa53a164f091b05192bef9053d7e9d4c00bd69f874734a"
+    },
+    "gaussmrisim/coils/fourier_csm.py": {
+      "original": "gaussmrisim/coils/fourier_csm.py",
+      "sha256": "9c9c6b4d132381078c9726d88b8edefbb2d257bd551eeda84318af44c93f4b1c"
+    },
+    "gaussmrisim/conventions.py": {
+      "original": "gaussmrisim/conventions.py",
+      "sha256": "307fdc938c617cf22f9b9c171a7899169e588126e6fe6e558485439c9b2017d3"
+    },
+    "gaussmrisim/datasets/__init__.py": {
+      "original": "gaussmrisim/datasets/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaussmrisim/datasets/brainweb.py": {
+      "original": "gaussmrisim/datasets/brainweb.py",
+      "sha256": "24bc8130c211e04861e2760fcfff237d335d928c277cc256e8ccd1def33e5692"
+    },
+    "gaussmrisim/datasets/ellipsoid.py": {
+      "original": "gaussmrisim/datasets/ellipsoid.py",
+      "sha256": "63a4f2107475e873b408f8692ae34040ac96cf797f54f1259ab578d54ff37462"
+    },
+    "gaussmrisim/datasets/polyhedral.py": {
+      "original": "gaussmrisim/datasets/polyhedral.py",
+      "sha256": "367ae5467885647133c445f72d7ffcd56ba055808d88f746d4a97eae3cf92768"
+    },
+    "gaussmrisim/evaluation/__init__.py": {
+      "original": "gaussmrisim/evaluation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaussmrisim/evaluation/fov.py": {
+      "original": "gaussmrisim/evaluation/fov.py",
+      "sha256": "39e78cd1414f373c82afb715d2ea57925dc4fa9b9447e0a0c67999b801f2eaab"
+    },
+    "gaussmrisim/evaluation/raster.py": {
+      "original": "gaussmrisim/evaluation/raster.py",
+      "sha256": "1bf7831bff84caaff182b9f6826dddc485955e8c5a0289cd7756ef0134dff687"
+    },
+    "gaussmrisim/fitting/__init__.py": {
+      "original": "gaussmrisim/fitting/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaussmrisim/fitting/boundary.py": {
+      "original": "gaussmrisim/fitting/boundary.py",
+      "sha256": "d44f33bdd55a46103576e582ee1c8ed280ab808732f608e9e44cbed8d8ee33a4"
+    },
+    "gaussmrisim/fitting/continuous_tv.py": {
+      "original": "gaussmrisim/fitting/continuous_tv.py",
+      "sha256": "a0dc5c923a8338f1cbba9d59780591d59de2cae82dc0d9f6f95efa939c9a8485"
+    },
+    "gaussmrisim/fitting/cuda/grad_rho_kernel.cu": {
+      "original": "gaussmrisim/fitting/cuda/grad_rho_kernel.cu",
+      "sha256": "34881e835e018568b9b282d8f4260a2bf5065633fded79d0a6981228174b0e18"
+    },
+    "gaussmrisim/fitting/cuda/render3d_kernel.cu": {
+      "original": "gaussmrisim/fitting/cuda/render3d_kernel.cu",
+      "sha256": "e54e8e40bd6cf775bcf4d894709123c3cebebf5f5b917d0dbcf2485382df3a9e"
+    },
+    "gaussmrisim/fitting/fitter.py": {
+      "original": "gaussmrisim/fitting/fitter.py",
+      "sha256": "77e6b3c5eda94ebd6bc9f3063986ee70bfd7e0ea9653e414884fe0f947b9320d"
+    },
+    "gaussmrisim/fitting/renderer3d.py": {
+      "original": "gaussmrisim/fitting/renderer3d.py",
+      "sha256": "1433c6e83f00d0b6a2689417b694a20b3a70d27303bea202f050a77c6c1e766a"
+    },
+    "gaussmrisim/fitting/tissue_fit.py": {
+      "original": "gaussmrisim/fitting/tissue_fit.py",
+      "sha256": "602c7e24cef9068e2c6e2990c98661d1560d84d1ad16f42171169b07d6b9917f"
+    },
+    "gaussmrisim/fourier/__init__.py": {
+      "original": "gaussmrisim/fourier/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaussmrisim/fourier/cuda/gaussian_ft3d_kernel.cu": {
+      "original": "gaussmrisim/fourier/cuda/gaussian_ft3d_kernel.cu",
+      "sha256": "b4f4fb57773ab7f1d5ed94a3a677281d0f23d2e1ce0dca758866113c5f971cf2"
+    },
+    "gaussmrisim/fourier/cuda/polyhedral_ft_kernel.cu": {
+      "original": "gaussmrisim/fourier/cuda/polyhedral_ft_kernel.cu",
+      "sha256": "fc2016742b3491d94ddae7fb9ebd5b2b273b49d7f14450dd5df5f37847927a2c"
+    },
+    "gaussmrisim/fourier/cuda_ft.py": {
+      "original": "gaussmrisim/fourier/cuda_ft.py",
+      "sha256": "6437001274a20bcddb94efd3f8a5adf9ca998904cd340e0d89b9d9af17befda3"
+    },
+    "gaussmrisim/fourier/gaussian_ft.py": {
+      "original": "gaussmrisim/fourier/gaussian_ft.py",
+      "sha256": "abce707afd5c120069e9ca976b668626044f65db5e859978eef0c23074f3cb30"
+    },
+    "gaussmrisim/fourier/polyhedral_cells.py": {
+      "original": "gaussmrisim/fourier/polyhedral_cells.py",
+      "sha256": "8663f1473b33507c818d61a425fdb9f7d76f6ed5068697e422b5e47fa52855f6"
+    },
+    "gaussmrisim/fourier/polyhedral_ft.py": {
+      "original": "gaussmrisim/fourier/polyhedral_ft.py",
+      "sha256": "141cc693a65f26bd3d949d14b85439ed6cd30e8d54a30c119eea8e25976badf5"
+    },
+    "gaussmrisim/fourier/polyhedral_tets.py": {
+      "original": "gaussmrisim/fourier/polyhedral_tets.py",
+      "sha256": "a982d861d56aa0fcf38d9d3cfa31710f0c379e238c04060b46b2a84479fafeb3"
+    },
+    "gaussmrisim/motion/__init__.py": {
+      "original": "gaussmrisim/motion/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaussmrisim/motion/resample.py": {
+      "original": "gaussmrisim/motion/resample.py",
+      "sha256": "08044bf9825ba7708dc65be5e829701e87f393e90a377cb7f9e1cb0b40ff9768"
+    },
+    "gaussmrisim/motion/rigid.py": {
+      "original": "gaussmrisim/motion/rigid.py",
+      "sha256": "31bbac66e34a672d255cb31fb9f46fcfac915c97d3972222f7d722dbd93b353f"
+    },
+    "gaussmrisim/physics/__init__.py": {
+      "original": "gaussmrisim/physics/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaussmrisim/physics/signal_model.py": {
+      "original": "gaussmrisim/physics/signal_model.py",
+      "sha256": "8a26977287934548896ea57e9d0ea59733235c2988ff9a41bd3278341cac1273"
+    },
+    "gaussmrisim/physics/tissue.py": {
+      "original": "gaussmrisim/physics/tissue.py",
+      "sha256": "e69b75106eae946a72adf9656231fbebae40e919fd95a586ff78a2a277b32529"
+    },
+    "gaussmrisim/physics/tissue_props.py": {
+      "original": "gaussmrisim/physics/tissue_props.py",
+      "sha256": "c97bc164c5752dafb9214ddbad23a3a300de78a421536815f391b0392d48479c"
+    },
+    "gaussmrisim/representation/__init__.py": {
+      "original": "gaussmrisim/representation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gaussmrisim/representation/gaussian3d.py": {
+      "original": "gaussmrisim/representation/gaussian3d.py",
+      "sha256": "b971f53e562b1d8ada6a0f223aebf7e32f3aac1592331e1205b89b9c83f329cc"
+    },
+    "gaussmrisim/sim/__init__.py": {
+      "original": "gaussmrisim/sim/__init__.py",
+      "sha256": "832a6308e42a9c29d50230688e59ede441c7bd58a3b80ff788f57986216fb7a6"
+    },
+    "gaussmrisim/sim/config.py": {
+      "original": "gaussmrisim/sim/config.py",
+      "sha256": "ea800cc6781707c80d43f136cbd5dd73dd190323ed97f051361949e31d1c94db"
+    },
+    "gaussmrisim/sim/engine.py": {
+      "original": "gaussmrisim/sim/engine.py",
+      "sha256": "b296fa7c1509f4d441d57949e09f970b62517346e74925b141ed30164511f2fb"
+    },
+    "gaussmrisim/sim/motion.py": {
+      "original": "gaussmrisim/sim/motion.py",
+      "sha256": "e125f02318e4e13e3de08a70dd222568f5411e0122b1108db11d7cbe91f6e7f8"
+    },
+    "gaussmrisim/sim/noise.py": {
+      "original": "gaussmrisim/sim/noise.py",
+      "sha256": "e4d6f0c291a0bf81ba85ecb6d3db1ee56316bbf3187ac0bd59ac86fc7211d889"
+    },
+    "gaussmrisim/sim/phantom.py": {
+      "original": "gaussmrisim/sim/phantom.py",
+      "sha256": "ab74b8f890bc07ac7a4b689fe332fcf08b378321b415702b5fdfe4a4539d9357"
+    },
+    "experiments/aliasing_box_baseline.py": {
+      "original": "scripts/aliasing_box_baseline.py",
+      "sha256": "31a9eb6cd0cc538bd10a635241202b099905f6a3babd71ddd3204997f9e43160"
+    },
+    "experiments/aliasing_cg_radial.py": {
+      "original": "scripts/aliasing_cg_radial.py",
+      "sha256": "f1384b36446166649f2693a72e221a130e3e2a3dbab3daadae89977455976cdc"
+    },
+    "experiments/aliasing_recon_noise.py": {
+      "original": "scripts/aliasing_recon_noise.py",
+      "sha256": "62abdb475986ebfc9832bea47c93b2cdf727d2a6a72cd94ce56924598b3ed618"
+    },
+    "experiments/bench_parallel_radial.py": {
+      "original": "scripts/bench_parallel_radial.py",
+      "sha256": "cb2e877a2e49ba45fc9103ca565587b10bb0bff0753449e15e649a69dfdc3307"
+    },
+    "experiments/figures.py": {
+      "sha256": "0c525a76fb9173588106ad843a684e8d692b798cf3c8aa368819bf61a93fe53e"
+    },
+    "experiments/fit_tissues_brainweb.py": {
+      "original": "scripts/fit_tissues_brainweb.py",
+      "sha256": "ed40b584d28b8b3bf19ffa7ff851eb3f26afdc306c00687766de09f2acdf862c"
+    },
+    "experiments/geometry.py": {
+      "original": "scripts/paper_geometry_figure.py",
+      "sha256": "ce12a9b79fe3f7fc3898335d7db23843d7378c6133ceed4fd57ab20300abee8e"
+    },
+    "experiments/gibbs_demo.py": {
+      "original": "scripts/gibbs_demo.py",
+      "sha256": "3e9c6893c47904ac5feff1ed3a9aca41eef13be83a52477138aa865fa6c38519"
+    },
+    "experiments/motion_aphabamas.py": {
+      "original": "scripts/motion_aphabamas.py",
+      "sha256": "2b4706c5efa07f8c08266b1a580c1a8e1a3fc9c965dc769e6d2b362af5b38baa"
+    },
+    "experiments/shepplogan_benchmark.py": {
+      "original": "scripts/shepplogan_benchmark.py",
+      "sha256": "1ca909970c61314be91bfb6709bd9b51bff18f15fb886bddb364e6f485201907"
+    },
+    "experiments/shepplogan_tets.py": {
+      "original": "scripts/shepplogan_tets.py",
+      "sha256": "1bedbb78f7b91bb42bdf01290e1a0ffe1dbdad65507b7804aeec86a8353b421f"
+    },
+    "tests/verify_cuda.py": {
+      "original": "scripts/verify_cuda.py",
+      "sha256": "bc8fa5499f3272ef50688de86ee25763575adf6a2f0ec41a0bc2771897843ca8"
+    },
+    "tests/verify_polyhedral.py": {
+      "original": "scripts/verify_polyhedral.py",
+      "sha256": "9303fae4e60fd813299db3704ecfc47c439e9efd9d4c24d9a61ee4b82df46996"
+    },
+    "tests/verify_sim.py": {
+      "original": "scripts/verify_sim.py",
+      "sha256": "b8ad18a71cd151176ed181b9dc061617aa2ecb42185e014e242671fcdb088e35"
+    },
+    "scripts/env_gpu_nufft.sh": {
+      "original": "scripts/env_gpu_nufft.sh",
+      "sha256": "c62b720db032d73560352e8dfc07a2ea90268847e06860eb2115fc64808d1dce"
+    }
+  }
+}
