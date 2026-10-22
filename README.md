@@ -10,12 +10,11 @@ rigid poses through analytical operators implemented in PyTorch/CUDA.
 
 <p align="center"><img src="docs/assets/grid-artifacts.png" width="650" alt="Paper Figure 1: voxel-grid spectra differ from continuous-object spectra, affecting reconstruction."></p>
 
-*Figure 1. Discretization errors from a voxel phantom are distinct from Gibbs
-ringing caused by finite acquisition bandwidth.*
+*Figure 1. Discretization errors motivate continuous simulation.*
 
 ![Fit once, set the protocol, and simulate multi-coil k-space](docs/assets/workflow.png)
 
-*Figure 2. The paper's three-stage workflow, simplified here by removing formulas.*
+*Figure 2. Analytical MRI simulation with Gaussian representations and Fourier coil modulation.*
 
 ## Install
 
