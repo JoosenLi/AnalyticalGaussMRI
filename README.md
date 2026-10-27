@@ -2,8 +2,6 @@
 
 **Continuous Representation Before Reconstruction: An Analytical Framework for 3D Parallel MRI Simulation**
 
-[Read the paper](paper/paper.pdf)
-
 Voxel-based MRI simulation can introduce discretization and motion-resampling
 errors before reconstruction even starts. We fit the anatomy once as a continuous
 mixture of 3D Gaussians, then evaluate its k-space directly. The same geometry

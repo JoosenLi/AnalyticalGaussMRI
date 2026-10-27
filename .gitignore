@@ -9,8 +9,7 @@ dist/
 .pytest_cache/
 outputs/
 data/
-paper/*
-!paper/paper.pdf
+paper/
 .agents/
 .codex/
 .aws/
