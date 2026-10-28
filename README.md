@@ -12,6 +12,13 @@ rigid poses through analytical operators implemented in PyTorch/CUDA.
 
 *Figure 1. Discretization errors motivate continuous simulation.*
 
+**One figure, four connected effects:**
+
+- **Inverse crime:** the same voxel phantom is recovered exactly in (a) and (c), hiding the continuous-object mismatch.
+- **Truncation and ringing:** discarded frequencies in (b) lead to Gibbs ringing in (c).
+- **Spectral replicas:** voxel sampling introduces replicas that overlap the acquired band in (b).
+- **Discretization error:** voxel averaging in (a), together with spectral replication, changes the in-band signal in (b).
+
 ![Fit once, set the protocol, and simulate multi-coil k-space](docs/assets/workflow.png)
 
 *Figure 2. Analytical MRI simulation with Gaussian representations and Fourier coil modulation.*
