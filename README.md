@@ -8,9 +8,9 @@ mixture of 3D Gaussians, then evaluate its k-space directly. The same geometry
 supports different tissue contrasts, sampling trajectories, receive coils, and
 rigid poses through analytical operators implemented in PyTorch/CUDA.
 
-<p align="center"><img src="docs/assets/grid-artifacts.png" width="650" alt="Paper Figure 1: voxel-grid spectra differ from continuous-object spectra, affecting reconstruction."></p>
+<p align="center"><img src="docs/assets/grid-artifacts.png" width="650" alt="Voxel-grid spectra differ from continuous-object spectra, affecting reconstruction."></p>
 
-*Figure 1. Discretization errors motivate continuous simulation.*
+*Discretization errors motivate continuous simulation.*
 
 **One figure, four connected effects:**
 
@@ -21,7 +21,7 @@ rigid poses through analytical operators implemented in PyTorch/CUDA.
 
 ![Fit once, set the protocol, and simulate multi-coil k-space](docs/assets/workflow.png)
 
-*Figure 2. Analytical MRI simulation with Gaussian representations and Fourier coil modulation.*
+*Analytical MRI simulation with Gaussian representations and Fourier coil modulation.*
 
 ## Install
 
@@ -73,17 +73,17 @@ your fitted object.
 
 | Paper result | Stage | Output under `outputs/` |
 |---|---|---|
-| Table 1 and Fig. 3: representation benchmark | `shepplogan` | `shepplogan_bench/`, `tables/shepplogan.json` |
-| Fig. 4: Gibbs ringing | `gibbs` | `sim/gibbs_demo/` |
-| Fig. 5: Cartesian/radial noise study | `discretization` | `sim/aliasing_recon_noise/` |
-| Section 3.3: 20-coil encoding cost | `coils` | `sim/bench_parallel_radial/` |
-| Fig. 6: rigid motion | `motion` | `sim/motion_aphabamas/` |
+| Representation benchmark | `shepplogan` | `shepplogan_bench/`, `tables/shepplogan.json` |
+| Gibbs ringing | `gibbs` | `sim/gibbs_demo/` |
+| Cartesian/radial noise study | `discretization` | `sim/aliasing_recon_noise/` |
+| 20-coil encoding cost | `coils` | `sim/bench_parallel_radial/` |
+| Rigid motion | `motion` | `sim/motion_aphabamas/` |
 
 ## Structure
 
 ```text
 gaussmrisim/   Gaussian representation, fitting, encoding, coils, motion, tissue physics
-experiments/   paper benchmarks and Figures 3–6
+experiments/   representation, acquisition, and motion benchmarks
 scripts/       data download, unified runner, CUDA environment helper
 configs/       paper's per-tissue primitive budget
 docs/assets/   the two README illustrations
